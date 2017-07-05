@@ -12,7 +12,7 @@ num_lines = sum(1 for line in f)
 f.seek(0)
 r = csv.reader(f)
 # Create an API client, replace token with your API token value
-c = Client(token='your token here', host='iptools.swg.usma.ibm.com')
+c = Client(token='your token here', host='lit-iptoolstest2.swg.usma.ibm.com')
 # Find the subnet you want to request addreses from, in this case I'll look for one named 'A3/188/Ratl' which has enough available addresses
 for row in r:
 	for subnet in c.ipv4subnets.all():
